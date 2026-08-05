@@ -1,5 +1,5 @@
 +++
-title = "MIT"
+title = "Courses"
 weight = 1
 template = "coursework.html"
 
