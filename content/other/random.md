@@ -11,7 +11,7 @@ for the math programs [Athemath](https://athemath.org/),
 [G2](https://www.g2mathprogram.org/), and MOP!
 
 These meetups are also open to friends and the greater math community.
-See [here](https://web.evanchen.cc/party.html) for past event photos.
+See [past event photos](https://web.evanchen.cc/party.html).
 
 ## Living Community
 
