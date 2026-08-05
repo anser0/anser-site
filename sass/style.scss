@@ -233,10 +233,6 @@ main {
   @media (min-width: $screen-md) {
     width: 60%;
   }
-
-  > * + * {
-    margin-top: 1.5rem;
-  }
 }
 
 .home-photo {
@@ -254,23 +250,6 @@ main {
 
   @media (min-width: $screen-md) {
     float: right;
-  }
-}
-
-.activities {
-  p {
-    font-style: italic;
-  }
-
-  ul {
-    margin-top: 0.5rem;
-    padding-left: 1.25rem;
-    list-style: disc;
-  }
-
-  a {
-    color: $link-color;
-    text-decoration: underline;
   }
 }
 

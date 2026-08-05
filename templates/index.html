@@ -1,21 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="home">
-        <div class="home-text">
-            <div class="prose">{{ section.content | safe }}</div>
-            {% if section.extra.activities %}
-                <section class="activities">
-                    <p>{{ section.extra.activities_title | default(value="Upcoming and recent activities:") }}</p>
-                    <ul>
-                        {% for activity in section.extra.activities %}
-                            <li>
-                                {% if activity.url %}<a href="{{ activity.url | safe }}">{{ activity.name }}</a>{% else %}{{ activity.name }}{% endif %}{% if activity.detail %}, {{ activity.detail }}{% endif %}
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </section>
-            {% endif %}
-        </div>
+        <div class="home-text prose">{{ section.content | safe }}</div>
         {% if section.extra.profile_image %}
             <div class="home-photo">
                 <img class="profile-img"
