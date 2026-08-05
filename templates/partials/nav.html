@@ -1,0 +1,43 @@
+{% set index = get_section(path="_index.md") %}
+{% set here = current_path | default(value="") %}
+
+<nav class="ml-auto flex space-x-6 justify-end items-center">
+  <a class="text-base font-medium text-gray-900 hover:text-gray-900"
+     href="{{ get_url(path='/', trailing_slash=true) }}"
+     {% if here == "/" %}aria-current="page"{% endif %}>{{ index.title }}</a>
+
+  {% for nav_page in index.pages %}
+    <a class="text-base font-medium text-gray-900 hover:text-gray-900"
+       href="{{ nav_page.permalink | safe }}"
+       {% if here == nav_page.path %}aria-current="page"{% endif %}>{{ nav_page.title }}</a>
+  {% endfor %}
+
+  {% for subsection_path in index.subsections %}
+    {% set sub = get_section(path=subsection_path) %}
+    <div class="relative group">
+      <a class="flex items-center gap-1 text-base font-medium text-gray-900 hover:text-gray-900 cursor-pointer"
+         href="{{ sub.permalink | safe }}"
+         {% if here is starting_with(sub.path) %}aria-current="true"{% endif %}>
+        {{ sub.title }}
+        <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180"
+             fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </a>
+
+      <div class="absolute right-0 pt-2 w-max opacity-0 invisible
+                  group-hover:opacity-100 group-hover:visible
+                  group-focus-within:opacity-100 group-focus-within:visible
+                  transition-all duration-150">
+        <div class="bg-white border border-gray-200 rounded-md shadow-md">
+          {% for child in sub.pages %}
+            <a href="{{ child.permalink | safe }}"
+               class="block px-4 py-2 text-base text-gray-900 hover:bg-gray-100"
+               {% if here == child.path %}aria-current="page"{% endif %}>{{ child.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</nav>

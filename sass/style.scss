@@ -1,0 +1,72 @@
+$link-color: #6b003e;
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: white;
+  position: relative;
+}
+
+header {
+  font-family: "Noto Serif", serif;
+}
+
+.link-color {
+  color: $link-color;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+// Typography for rendered Markdown bodies.
+.rich-text {
+  > * + * {
+    margin-top: 0.5rem;
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: underline;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.25rem;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  li + li {
+    margin-top: 0.25rem;
+  }
+
+  h2,
+  h3 {
+    font-style: italic;
+    margin-top: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}

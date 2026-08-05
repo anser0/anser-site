@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }} | {{ config.title }}{% endblock title %}
+{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}
+
+{% block content %}
+<section class="text-lg">
+  <div class="rich-text">
+    {{ section.content | safe }}
+  </div>
+
+  {% if section.pages %}
+    <ul class="list-disc pl-5 mt-2">
+      {% for child in section.pages %}
+        <li><a href="{{ child.permalink | safe }}" class="link-color underline">{{ child.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</section>
+{% endblock content %}
