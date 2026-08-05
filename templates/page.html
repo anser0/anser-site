@@ -1,12 +1,8 @@
 {% extends "base.html" %}
-
 {% block title %}{{ page.title }} | {{ config.title }}{% endblock title %}
-{% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
-
+{%- block description -%}
+    {% if page.description %}{{ page.description }}{% else %}{{ config.description }}{% endif %}
+{%- endblock description -%}
 {% block content %}
-<article class="text-lg">
-  <div class="rich-text">
-    {{ page.content | safe }}
-  </div>
-</article>
+    <article class="prose">{{ page.content | safe }}</article>
 {% endblock content %}

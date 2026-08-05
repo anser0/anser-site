@@ -1,25 +1,20 @@
 {% extends "base.html" %}
-
 {% block title %}{{ page.title }} | {{ config.title }}{% endblock title %}
-{% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
-
+{%- block description -%}
+    {% if page.description %}{{ page.description }}{% else %}{{ config.description }}{% endif %}
+{%- endblock description -%}
 {% block content %}
-<div class="text-lg">
-  <div class="rich-text">
-    {{ page.content | safe }}
-  </div>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 mt-2">
-    {% for term in page.extra.terms %}
-      <div>
-        <p class="italic">{{ term.name }}</p>
-        <ul class="list-disc pl-5">
-          {% for course in term.courses %}
-            <li>{{ course }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endfor %}
-  </div>
-</div>
+    <div class="prose">{{ page.content | safe }}</div>
+    <div class="terms">
+        {% for term in page.extra.terms %}
+            <section class="term">
+                <p>{{ term.name }}</p>
+                <ul>
+                    {% for course in term.courses %}
+                        <li>{{ course }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+        {% endfor %}
+    </div>
 {% endblock content %}

@@ -1,34 +1,29 @@
 {% extends "base.html" %}
-
 {% block content %}
-<div class="flex flex-col-reverse md:flex-row md:items-center gap-6">
-  <div class="w-full md:w-3/5">
-    <div class="space-y-6 text-lg">
-      <div class="rich-text">
-        {{ section.content | safe }}
-      </div>
-
-      {% if section.extra.activities %}
-        <div>
-          <p class="italic">{{ section.extra.activities_title | default(value="Upcoming and recent activities:") }}</p>
-          <ul class="list-disc pl-5 mt-2">
-            {% for activity in section.extra.activities %}
-              <li>
-                {% if activity.url %}<a href="{{ activity.url | safe }}" class="link-color underline">{{ activity.name }}</a>{% else %}{{ activity.name }}{% endif %}{% if activity.detail %}, {{ activity.detail }}{% endif %}
-              </li>
-            {% endfor %}
-          </ul>
+    <div class="home">
+        <div class="home-text">
+            <div class="prose">{{ section.content | safe }}</div>
+            {% if section.extra.activities %}
+                <section class="activities">
+                    <p>{{ section.extra.activities_title | default(value="Upcoming and recent activities:") }}</p>
+                    <ul>
+                        {% for activity in section.extra.activities %}
+                            <li>
+                                {% if activity.url %}<a href="{{ activity.url | safe }}">{{ activity.name }}</a>{% else %}{{ activity.name }}{% endif %}{% if activity.detail %}, {{ activity.detail }}{% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endif %}
         </div>
-      {% endif %}
+        {% if section.extra.profile_image %}
+            <div class="home-photo">
+                <img class="profile-img"
+                     src="{{ get_url(path=section.extra.profile_image) }}"
+                     alt="{{ config.author }}"
+                     width="250"
+                     height="250">
+            </div>
+        {% endif %}
     </div>
-  </div>
-
-  {% if section.extra.profile_image %}
-    <div class="w-full md:w-2/5 md:text-right">
-      <img src="{{ get_url(path=section.extra.profile_image) }}"
-           alt="{{ config.author }}"
-           class="profile-img md:float-right">
-    </div>
-  {% endif %}
-</div>
 {% endblock content %}
