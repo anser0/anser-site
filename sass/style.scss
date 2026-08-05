@@ -48,6 +48,14 @@ header {
     margin-top: 0.25rem;
   }
 
+  li > p + p {
+    margin-top: 0.25rem;
+  }
+
+  li:has(> p) + li {
+    margin-top: 0.75rem;
+  }
+
   h2,
   h3 {
     font-style: italic;
