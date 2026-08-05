@@ -17,7 +17,6 @@
         {% include "partials/pagination.html" %}
     {% endif %}
     <p class="post-browse">
-        <a href="{{ get_url(path='categories', trailing_slash=true) }}">Browse categories</a> •
         <a href="{{ get_url(path='tags', trailing_slash=true) }}">Browse tags</a> •
         <a href="{{ get_url(path='blog/rss.xml') }}">RSS Feed</a> •
         <a href="{{ get_url(path='blog/atom.xml') }}">Atom Feed</a>

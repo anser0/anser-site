@@ -4,8 +4,7 @@ date = 2026-08-05
 draft = false
 
 [taxonomies]
-categories = ["Meta"]
-tags = ["writing"]
+tags = ["testing"]
 +++
 
 Quote:

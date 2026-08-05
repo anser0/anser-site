@@ -1,8 +1,4 @@
-{# Expects `post`: the page whose categories and tags to render as chips. #}
-{% for category in post.taxonomies.categories | default(value=[]) %}
-    <a class="post-tag post-tag-category"
-       href="{{ get_taxonomy_url(kind='categories', name=category) | safe }}">{{ category }}</a>
-{% endfor %}
+{# Expects `post`: the page whose tags to render as chips. #}
 {% for tag in post.taxonomies.tags | default(value=[]) %}
     <a class="post-tag"
        href="{{ get_taxonomy_url(kind='tags', name=tag) | safe }}">{{ tag }}</a>
