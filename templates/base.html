@@ -14,6 +14,14 @@
               rel="stylesheet">
         <link rel="stylesheet"
               href="{{ get_url(path='style.css', cachebust=true) }}">
+        <link rel="alternate"
+              type="application/rss+xml"
+              title="{{ config.title }} — Blog"
+              href="{{ get_url(path='blog/rss.xml') }}">
+        <link rel="alternate"
+              type="application/atom+xml"
+              title="{{ config.title }} — Blog"
+              href="{{ get_url(path='blog/atom.xml') }}">
         {% block head %}
         {% endblock head %}
     </head>

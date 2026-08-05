@@ -11,6 +11,14 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+taxonomies = [
+  { name = "categories", paginate_by = 10 },
+  { name = "tags", paginate_by = 10 },
+]
+
+# Feeds are opted into per section; only content/blog has generate_feeds set.
+feed_filenames = ["atom.xml", "rss.xml"]
+
 [markdown]
 # Turn `:smile:` style shortcodes into emoji
 render_emoji = false
