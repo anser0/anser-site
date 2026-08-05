@@ -13,7 +13,7 @@ and will be a graduate student at Columbia University in the fall.
 I'm currently interested in many areas in algebra,
 including algebraic topology and algebraic combinatorics.
 
-Here is my [resume](/files/resume.pdf).
+Here is my [résumé](/files/resume.pdf).
 
 Feel free to contact me at anser [at] mit [dot] edu.
 
