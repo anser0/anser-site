@@ -548,4 +548,34 @@ main {
     font-weight: 700;
     background-color: $gray-100;
   }
+
+  .footnote-reference a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .footnotes {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid $gray-200;
+    font-size: 0.9375rem;
+    color: $gray-800;
+  }
+
+  .footnotes-list li + li {
+    margin-top: 0.5rem;
+  }
+
+  // The back-reference arrow Zola appends to each footnote.
+  .footnotes-list a[href^="#fr-"] {
+    margin-left: 0.25rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

@@ -23,6 +23,9 @@ feed_filenames = ["atom.xml", "rss.xml"]
 # Turn `:smile:` style shortcodes into emoji
 render_emoji = false
 
+# Collect footnotes at the end of the page and add back-references
+bottom_footnotes = true
+
 [markdown.highlighting]
 theme = "catppuccin-mocha"
 
