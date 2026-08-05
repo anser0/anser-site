@@ -34,7 +34,7 @@ In summer 2024, I participated in the
 
   [[pdf][ps-pdf]] [[slides][ps-slides]]
   with [Katherine Tung][ktung] and [Yuchong Zhang][yzhang]
-  under mentor [Shiyun Wang][swang] and TA [Meagan Kenney][kenney]
+  under mentor [Shiyun Wang][swang] and TA Meagan Kenney
 
 - **Newton polytopes of dual Schubert polynomials**
 
@@ -110,7 +110,6 @@ and enjoy remaining involved!
 [ktung]: https://sites.google.com/view/katherinetung/home
 [yzhang]: https://sites.google.com/view/yuchong
 [swang]: https://www.sywangmath.com/
-[kenney]: https://cse.umn.edu/math/meagan-kenney
 [kwright]: https://sites.google.com/view/kayla-wright
 [catania]: https://sites.google.com/umn.edu/elise-catania
 [hmui]: https://www.mit.edu/~hsmui/
