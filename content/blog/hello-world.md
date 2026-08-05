@@ -1,8 +1,7 @@
 +++
-title = "Testing"
+title = "안녕"
 date = 2026-08-05
 draft = false
-description = "안녕"
 
 [taxonomies]
 categories = ["Meta"]

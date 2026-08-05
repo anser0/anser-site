@@ -3,11 +3,12 @@
     <ul class="post-list">
         {% for post in posts %}
             <li class="post-item">
-                <h2 class="post-title">
-                    <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
-                </h2>
-                {% include "partials/post-meta.html" %}
-                {% if post.description %}<p class="post-summary">{{ post.description }}</p>{% endif %}
+                <time class="post-date" datetime="{{ post.date }}">{{ post.date | date(format="%b %-d, %Y") }}</time>
+                <span class="post-heading">
+                    <a class="post-link" href="{{ post.permalink | safe }}">{{ post.title }}</a>
+                    {% if post.draft %}<span class="post-draft">Draft</span>{% endif %}
+                </span>
+                <span class="post-terms">{%- include "partials/post-terms.html" -%}</span>
             </li>
         {% endfor %}
     </ul>
