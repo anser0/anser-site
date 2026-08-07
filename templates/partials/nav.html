@@ -15,7 +15,7 @@
             <div class="dropdown">
                 <button type="button"
                         aria-haspopup="true"
-                        {% if here is starting_with(sub.path) %}aria-current="true"{% endif %}>
+                        {% if here is starting_with(pat=sub.path) %}aria-current="true"{% endif %}>
                     {{ sub.title }}
                     <svg fill="none"
                          stroke="currentColor"
@@ -36,7 +36,7 @@
             </div>
         {% else %}
             <a href="{{ sub.permalink | safe }}"
-               {% if here is starting_with(sub.path) %}aria-current="page"{% endif %}>{{ sub.title }}</a>
+               {% if here is starting_with(pat=sub.path) %}aria-current="page"{% endif %}>{{ sub.title }}</a>
         {% endif %}
     {% endfor %}
 </nav>
