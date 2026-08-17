@@ -78,4 +78,4 @@ courses = [
 ]
 +++
 
-## Coursework
+## MIT Coursework

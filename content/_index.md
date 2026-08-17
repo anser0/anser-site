@@ -7,15 +7,13 @@ sort_by = "weight"
 profile_image = "files/profile.jpg"
 +++
 
-Hi! I recently graduated from MIT
-and will be a graduate student at Columbia University in the fall.
+Hi! I am a first-year PhD student at Columbia University studying algebraic topology.
 
-I'm currently interested in many areas in algebra,
-including algebraic topology and algebraic combinatorics.
+Previously, I was an undergrad at MIT.
 
-Here is my [résumé](/files/resume.pdf).
+Here is my [resume](/files/resume.pdf).
 
-Feel free to contact me at anser [at] mit [dot] edu.
+Feel free to contact me at sja2190 [at] columbia [dot] edu.
 
 ## Upcoming and recent activities
 
