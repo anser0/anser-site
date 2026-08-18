@@ -1,6 +1,6 @@
 +++
 title = "Other"
-weight = 3
+weight = 8
 sort_by = "weight"
 render = false
 
