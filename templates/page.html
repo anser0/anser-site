@@ -1,11 +1,5 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }} | {{ config.title }}{% endblock title %}
-{# Non-blog pages opt into KaTeX with extra.math = true in their front matter. #}
-{% block head %}
-    {% if page.extra.math | default(value=false) %}
-        {% include "partials/katex.html" %}
-    {% endif %}
-{% endblock head %}
 {% block content %}
     <article class="prose">{{ page.content | safe }}</article>
 {% endblock content %}

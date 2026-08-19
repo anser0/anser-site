@@ -7,6 +7,10 @@
         <a href="{{ nav_page.permalink | safe }}"
            {% if here == nav_page.path %}aria-current="page"{% endif %}>{{ nav_page.title }}</a>
     {% endfor %}
+    {# Sites hosted elsewhere, listed in config.extra.nav_external. #}
+    {% for link in config.extra.nav_external | default(value=[]) %}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+    {% endfor %}
     {# A subsection becomes a dropdown of its pages only if it sets extra.nav_dropdown. #}
     {% for subsection_path in index.subsections %}
         {% set sub = get_section(path=subsection_path) %}

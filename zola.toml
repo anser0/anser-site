@@ -11,11 +11,6 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-taxonomies = [{ name = "tags", paginate_by = 10 }]
-
-# Feeds are opted into per section; only content/blog has generate_feeds set.
-feed_filenames = ["atom.xml", "rss.xml"]
-
 [markdown]
 # Turn `:smile:` style shortcodes into emoji
 render_emoji = false
@@ -28,3 +23,9 @@ theme = "catppuccin-mocha"
 
 [extra]
 keywords = "anser, Serena An, MIT, math"
+
+# Nav entries for sites that live outside this repo. They render after the
+# top-level pages and before the subsections.
+[[extra.nav_external]]
+title = "Blog"
+url = "https://blog.anserena.com"
