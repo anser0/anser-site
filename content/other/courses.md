@@ -1,6 +1,6 @@
 +++
-title = "Courses"
-weight = 1
+title = "MIT"
+weight = 3
 template = "coursework.html"
 
 [[extra.terms]]

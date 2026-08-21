@@ -1,6 +1,6 @@
 +++
 title = "Random"
-weight = 3
+weight = 4
 +++
 
 ## Math Program Meetups

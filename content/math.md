@@ -1,6 +1,6 @@
 +++
 title = "Math"
-weight = 2
+weight = 1
 +++
 
 ## Course Notes
