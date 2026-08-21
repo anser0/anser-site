@@ -13,7 +13,7 @@ Previously, I was an undergrad at MIT.
 
 Here is my [resume](/files/resume.pdf).
 
-Feel free to contact me at sja2190 [at] columbia [dot] edu.
+Feel free to contact me at serena.an [at] columbia [dot] edu.
 
 ## Upcoming and recent activities
 
