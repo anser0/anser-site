@@ -15,9 +15,9 @@ Thank you to [Sanjana Das][sanjana] for the LaTeX template.
 
   [[notes](/files/18_965.pdf)] taught by William Minicozzi, fall 2025
 
-## Research Experience
+## Undergraduate Research Experience
 
-I am currently doing research on chromatic quasisymmetric functions
+In summer 2026, I did research on chromatic quasisymmetric functions
 under [Tatsuyuki Hikita][hikita] at Kyoto University.
 
 In summer 2025, I participated in the
@@ -78,7 +78,9 @@ In high school, I participated in the MIT [PRIMES-USA][primes] program.
 
 - **Faithful specializations of the Burau representation**
 
-  [[pdf](/files/burau.pdf)] Final paper for 18.904 Seminar in Topology.
+  [[pdf](/files/burau.pdf)] [[journal][cjum]] Final paper for 18.904 Seminar in Topology.
+
+  *Columbia Journal of Undergraduate Mathematics, Volume 3 (2026), no. 2, pp. 8–22.*
 
 - **Dyson Brownian motion as noncolliding Brownian motion**
 
@@ -130,6 +132,7 @@ and enjoy remaining involved!
 [lorentzian]: https://arxiv.org/abs/2412.02051
 [flip-graphs]: https://arxiv.org/abs/2401.01457
 [stembridge]: https://alco.centre-mersenne.org/articles/10.5802/alco.199/
+[cjum]: https://journals.library.columbia.edu/index.php/cjum/article/view/2026.3.2.8-22
 
 [usajmo24]: https://aops.com/community/c3785855_2024_usajmo
 [usamo26]: https://aops.com/community/c4773061_2026_usamo
