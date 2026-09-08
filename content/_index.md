@@ -7,7 +7,7 @@ sort_by = "weight"
 profile_image = "files/profile.jpg"
 +++
 
-Hi! I am a first-year PhD student at Columbia University studying algebraic topology.
+Hi! I am a first-year PhD student at Columbia University studying algebraic topology, supported by the NSF GRFP.
 
 Previously, I was an undergrad at MIT.
 
@@ -20,4 +20,4 @@ Feel free to contact me at serena.an [at] columbia [dot] edu.
 - [International Mathematical Olympiad](https://www.imo-official.org/editions/2026/),
   Shanghai, China, July 11-21, 2026
 - [MISTI Japan](https://misti.mit.edu/japan),
-  Kyoto University, June-August 2026
+  Kyoto University, June 1-August 23 2026

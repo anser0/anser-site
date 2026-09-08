@@ -39,3 +39,5 @@ weight = 1
   Bourdeaux, France, April 9-15, 2026
 - [International Mathematical Olympiad](https://www.imo-official.org/year_info.aspx?year=2026),
   Shanghai, China, July 11-21, 2026
+- [MISTI Japan](https://misti.mit.edu/japan),
+  Kyoto University, June 1-August 23 2026
