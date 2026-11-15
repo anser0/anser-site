@@ -1,2 +1,1 @@
-profile = "jinja"
-ignore = "J018"
+profile = "tera"
